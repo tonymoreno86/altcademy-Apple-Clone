@@ -1,0 +1,398 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+/*               End of Setup             */
+
+/*                  Font                  */
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Myriad Set Pro";
+    src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+    font-weight: 100;
+}
+
+/* use the custom font like any other font */
+body {
+    font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+
+/* Navbar */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#nav-background {
+    background-color: #323233;
+}
+
+.nav-images {
+    margin: 0 30px;
+    height: 40px;
+}
+
+/*Hero content*/
+.iphone6s-div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.iphone6s-hero {
+    margin-top: 15px;
+}
+
+.iphone6s-div {
+    position: relative;
+    top: 210px;
+    left: 50px;
+    text-align: center;
+}
+
+.iphone6s-para {
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 5px 0;
+    padding-bottom: 25px
+}
+
+.iphone6s-links {
+    color: #2A96FF;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2A96FF;
+}
+
+/*Sub-hero content*/
+
+.sub-hero {
+    margin-top: 15px;
+}
+
+.bg-images {
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+#watch {
+    background-image: url(images/watch_large.jpg);
+}
+
+#ipad {
+    background-image: url(images/ipad_pro_large.jpg);
+}
+
+#accessories {
+    background-image: url(images/accessories_large.jpg);
+}
+
+#macbook {
+    background-image: url(images/macbook_large.jpg);
+}
+
+.col-3 {
+    display: inline-block;
+    width: 25%;
+}
+
+/*Link before header*/
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3 a {
+    color: #2A96FF;
+    text-decoration: none;
+}
+
+#icon-size {
+    font-size: .8rem;
+}
+
+/*Footer content*/
+
+#footer {
+    background-color: #F5F5F7;
+    padding-top: 20px;
+}
+
+.lead {
+    color: #515154;
+    font-weight: 600;
+}
+
+footer ul li a {
+    color: #A1A1A3;
+    text-decoration: none;
+}
+
+footer ul li a:visited {
+    color: #A1A1A3;
+}
+
+.col-5 {
+    width: 20%;
+    display: inline-block;
+}
+
+.no-display {
+    visibility: hidden;
+}
+
+ul li {
+    font-size: .8rem;
+    padding-top: 7px;
+    
+}
+
+#helper1 {
+    color: #A1A1A3;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+#helper1 a {
+    color: #2A96FF;
+    text-decoration: none;
+}
+
+#border {
+    border-bottom: 1px solid #D2D2D7;
+}
+
+#helper2 {
+    color: #A1A1A3;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: .8rem;
+}
+
+span:first-child {
+    padding-left: 10px
+}
+span a {
+    color: #434345;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+span a:visited {
+    color: #434345;
+}
+
+.usa {
+    display: inline-block;
+    float: right;
+    margin-top: -3px; 
+}
+
+small {
+    float: right;
+    padding-left: 5px
+}
